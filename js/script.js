@@ -144,7 +144,7 @@ window.addEventListener('DOMContentLoaded', () => {
     closeModal();
   });
 
-// Mobile menu
+  // Mobile menu
   const mobileMenu = document.querySelector('.mobile-menu');
   const navMenu = document.querySelector('.nav');
   const navWrap = document.querySelector('.nav__wrap');
@@ -152,6 +152,7 @@ window.addEventListener('DOMContentLoaded', () => {
   mobileMenu.addEventListener('click', () => {
     navMenu.classList.toggle('openMenu');
     navWrap.classList.toggle('open-menu-wrap');
+    mobileMenu.classList.toggle('open');
     body.classList.toggle('hidden');
   });
   
