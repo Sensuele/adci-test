@@ -401,6 +401,7 @@ a, button {
 }
 
 .main-header__logo {
+  z-index: 999;
   width: 280px;
   margin-bottom: 23px;
 }
@@ -565,7 +566,47 @@ a, button {
     width: 170px;
   }
   .nav {
-    display: none;
+    background-color: transparent;
+    position: fixed;
+    left: 100px;
+    top: 0;
+    z-index: 900;
+    width: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    /* overflow: hidden; */
+    -webkit-transition: 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    transition: 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  }
+  .nav__wrap {
+    padding-top: 100px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .openMenu {
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #00838f;
+  }
+  .open-menu-wrap {
+    visibility: visible;
+    opacity: 1;
+  }
+  .hidden {
+    overflow: hidden;
   }
 }
 
@@ -588,21 +629,13 @@ a, button {
             flex-direction: column;
     text-align: center;
   }
-  .nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .nav__menu {
     margin-right: 0;
   }
 }
 
 .auth-window {
+  z-index: 1000;
   position: absolute;
   top: 0;
   width: 100%;
@@ -610,8 +643,7 @@ a, button {
   padding-top: 120px;
   opacity: 0;
   visibility: hidden;
-  z-index: 100;
-  background-color: rgba(255, 255, 255, 0.6);
+  visibility-background-color: rgba(255, 255, 255, 0.6);
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -711,6 +743,7 @@ a, button {
 @media (max-width: 620px) {
   .auth-window {
     padding: 50px 15px;
+    padding-top: 20px;
   }
   .auth-forms {
     -webkit-box-orient: vertical;
@@ -773,7 +806,7 @@ a, button {
 }
 
 .main__about {
-  z-index: 99;
+  z-index: 10;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -857,6 +890,7 @@ a, button {
 }
 
 .articles {
+  z-index: 99;
   display: none;
   position: absolute;
   bottom: 0px;
@@ -967,9 +1001,6 @@ a, button {
   .articles-block__title {
     min-height: 0;
     font-size: 20px;
-  }
-  .slider__item {
-    height: calc(100vh - 68px);
   }
   .about {
     min-height: 0;

@@ -119,7 +119,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-  
+
   // modal open
   let open = document.querySelector('.auth__text'),
     popup = document.querySelector('.auth-window'),
@@ -144,4 +144,15 @@ window.addEventListener('DOMContentLoaded', () => {
     closeModal();
   });
 
+// Mobile menu
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const navMenu = document.querySelector('.nav');
+  const navWrap = document.querySelector('.nav__wrap');
+  const body = document.querySelector('body');
+  mobileMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('openMenu');
+    navWrap.classList.toggle('open-menu-wrap');
+    body.classList.toggle('hidden');
+  });
+  
 });

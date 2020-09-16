@@ -7,6 +7,7 @@
     padding-left: 20px
   &-header  
     &__logo
+      z-index: 999  
       width: 280px
       margin-bottom: 23px
 
@@ -108,7 +109,33 @@
       &__logo 
         width: 170px   
   .nav 
-    display: none
+    background-color: transparent
+    position: fixed
+    left: 100px
+    top: 0
+    z-index: 900
+    width: 0
+    align-items: flex-start
+    /* overflow: hidden; */
+    transition: .5s cubic-bezier(.8, .5, .2, 1.4)
+    &__wrap 
+      padding-top: 100px
+      opacity: 0
+      visibility: hidden
+      flex-direction: column
+      align-items: flex-start
+      justify-content: flex-start 
+  .openMenu 
+    left: 0
+    top: 0
+    width: 250px
+    height: 100vh
+    background-color: #00838f
+  .open-menu-wrap
+    visibility: visible 
+    opacity: 1
+  .hidden 
+    overflow: hidden
 @media (max-width: 767px)    
   .wrap   
     flex-direction: column
@@ -119,9 +146,6 @@
     flex-direction: column
     text-align: center
   .nav
-    // display: flex
-    flex-direction: column  
-    align-items: center
     &__menu
       margin-right: 0
 
