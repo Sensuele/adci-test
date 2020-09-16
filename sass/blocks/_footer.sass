@@ -1,0 +1,163 @@
+.footer
+  background-color: #353436
+  color: #fff    
+  margin-top: -1px
+  display: flex
+  flex-direction: column
+  align-content: space-between
+  &-top 
+    &__wrap
+      display: flex
+      flex-direction: row
+      justify-content: center
+      padding-bottom: 15px
+    &__section 
+      width: 195px
+      margin-top: 40px
+      margin-right: 45px
+      margin-left: 9px;  
+      font-weight: 300
+      font-size: 12px
+      line-height: 1.454
+      color: #cccccd 
+      &:last-child
+        margin-right: 0
+    &__title
+      margin: 0
+      text-transform: uppercase
+      font-weight: 700
+      font-size: 14px
+      color: #fff
+      margin-bottom: 15px
+    &__text
+      margin-top: 0
+      padding-right: 13px  
+      font-size: 12px
+      line-height: 17.4px
+.newsletter-form  
+  padding-top: 5px
+  &__input
+    width: 184px  
+    font-weight: 300
+    font-size: 14px
+    padding: 8px 5px
+    border: none    
+    margin-bottom: 12px
+    border: none !important
+    outline: none !important
+    &:focus
+      background-color: darken(#ffffff, 10%)
+  &__agree
+    margin-bottom: 5px  
+  &__checkbox
+    width: 10px
+    height: 10px   
+    border: none
+    outline: none
+    background-color: #fff  
+    margin-right: 5px  
+    vertical-align: middle
+  &__label
+    font-size: 10px
+    color: rgb(181, 180, 180)  
+  &__submit
+    width: 184px
+    margin-bottom: 8px
+    font-weight: 400
+    font-size: 17.68px
+    border: none
+    outline: none
+    background-color: #000
+    color: #fff
+    padding: 6px 0  
+    transition: all .3s
+    &:hover
+      background-color: lighten(#000, 60%)
+      cursor: pointer
+.footer
+  &__bottom
+    padding-left: 20px
+    padding-right: 20px
+    padding-bottom: 15px
+    display: flex
+    flex-direction: row
+    justify-content: space-between 
+  &-bottom 
+    
+    &-contacts
+      &__block
+        padding-top: 2px
+        color: #cccccd        
+      &__elem
+        margin-right: 11px
+        font-size: 12px
+        &:last-child
+          margin-right: 0
+    &__social 
+      display: flex
+      margin-left: 100px
+    &-social 
+      &__block
+        margin-right: 79px
+      &__link
+        margin-left: 10px
+    &-languages
+      &__block
+        padding-top: 2px
+      &__option           
+        text-decoration: none
+        color: #fff
+        font-size: 14px
+        padding-right: 4px
+        padding-left: 2px  
+        &:last-child
+          padding-right: 0
+        &:hover, &:active
+          text-decoration: underline  
+@media (max-width: 991px)            
+  .footer
+    &-top 
+      &__wrap 
+        flex-wrap: wrap
+        justify-content: space-between
+
+      &__section 
+        width: auto
+        flex-basis: 48%
+    &__bottom 
+      flex-direction: column
+      &-contacts
+        &__block
+          margin-bottom: 20px
+    &-bottom      
+      &__social 
+        margin-top: 20px
+        margin-left: 0
+        justify-content: center    
+      &-languages
+        &__block 
+          margin-top: 20px
+          display: flex
+          justify-content: center
+@media (max-width: 767px)    
+  .footer
+    padding-top: 20px
+    &-top 
+      &__block
+        flex-direction: column
+        margin: 0 auto        
+      &__section
+        width: 100%
+        flex-basis: 100%
+        margin: 0
+        margin-bottom: 20px
+        &:last-child
+          margin-bottom: 0
+  .footer-bottom-contacts__block 
+    text-align: center        
+  .newsletter-form__input
+    width: 100%        
+  .newsletter-form__label
+    font-size: 13px
+  .newsletter-form__submit
+    width: 100%  

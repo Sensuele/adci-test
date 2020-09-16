@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>mmlampadari</title>
+
+</head>
+
+<body>
+ 
+    <!-- HEADER -->
+    <div class="content">
+        <header class="main__header">
+            <div class="auth">
+                <div class="auth__text">
+                    AREA RISERVATA
+                </div>
+                <div class="auth__icon">
+                    <img src="img/lock.png" alt="authtorization icon">
+                </div>
+            </div>
+            <div class="main-header-wrap">
+                <div class="logo main-header__logo">
+                    <a href="/">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="mobile-menu "> <span class="mobile-menu__line"></span> <span
+                    class="mobile-menu__sline"></span> <span class="mobile-menu__line"></span></div>
+                <nav class="nav ">
+                    <ul class=" nav__wrap">
+                        
+                        <li class="nav__menu"><a class="nav__link active" href="#">HOME</a>
+
+                        </li>
+                        <li class="dropdown nav__menu">
+                            <a class="nav__link" href="#">AZIENDA</a>
+                            <ul class="dropdown-content dropdown__content">
+                                <li class="dropdown-content__item"><a href="#">STORIA</a></li>
+                                <li class="dropdown-content__item"><a href="#">MM DESIGN</a></li>
+                                <li class="dropdown-content__item"><a href="#">DESIGNER</a></li>
+                                <li class="dropdown-content__item"><a href="#">CERTIFICAZIONI</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__menu"><a class="nav__link" href="#">COLLEZIONI</a></li>
+                        <li class="nav__menu"><a class="nav__link" href="#">NEWS</a></li>
+                        <li class="nav__menu"><a class="nav__link" href="#">CONTATTI</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <div class="main-slider">
+                <div class="main__about">
+                    <div class="about__content">
+                        <h1 class="about__title">Lampadari contemporanei</h1>
+                        <p class="about__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor dolore</p>
+                    </div>
+                </div>
+                <ul class="slider-wrap">
+                    <li class="slider__item"
+                        style="background: url(./img/slider-3.jpg) 50% 50% / cover no-repeat; ">
+                    </li>
+                    <li class="slider__item"
+                        style="background: url(./img/slider-2.jpg) 50% 50% / cover no-repeat; display: block;">
+                    </li>
+                    <li class="slider__item"
+                        style="background: url(./img/slider-4.jpg) 50% 50% / cover no-repeat; ">
+                    </li>
+                </ul>
+                <!-- /.slider-wrap -->
+                <div class="slider-dots">
+                    <div class="dot"></div>
+                    <div class="dot dot-active"></div>
+                    <div class="dot"></div>
+                </div>
+                <!-- /.slider-dots -->
+            </div>
+            <!-- /.slider -->
+            <button class="button__show"></button>
+
+            <div class="articles articles__hide">
+
+                <div class="articles-block ">
+                    <button class="button__hide"></button>
+
+                    <article class="articles-block__item article-1">
+                        <h2 class="articles-block__title">Stai pensando ad un progetto?</h2>
+                        <p class="articles-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor dolore</p>
+                        <a class="articles-block__link link-1" href="#">Approfondisci</a>
+                    </article>
+                    <article class="articles-block__item article-2">
+                        <h2 class="articles-block__title">Vi aspettiamo alla fiera Euroluce</h2>
+                        <p class="articles-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor dolore</p>
+                        <a class="articles-block__link link-2" href="#">Approfondisci</a>
+                    </article>
+                    <article class="articles-block__item article-3">
+                        <h2 class="articles-block__title">Scopri la nuova collezione</h2>
+                        <p class="articles-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor dolore</p>
+                        <a class="articles-block__link link-3" href="#">Approfondisci</a>
+                    </article>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- END of MAIN -->
+    <!-- FOOTER -->
+
+       <!-- modal -->
+    <div class="auth-window">
+      <div class="auth-window__content">
+          <button class="close-modal" id="close-modal"></button>                
+          <h2 class="auth-window__title">AREA RISERVATA</h2>
+          <div class="auth-forms">
+              <form class="auth-forms__sign" action="#" >
+                  <h3 class="auth-forms__title">ACCEDI</h3>
+                  <input class="newsletter-form__input auth-forms__input" type="email" name="email" placeholder="E-mail" required>
+                  <input class="newsletter-form__input auth-forms__input" type="password" name="password" placeholder="Password" required>
+                  <input class="newsletter-form__submit" type="submit" value="ACCEDI">
+                  <br>
+                  <a class="auth-forms__password" href="#">Password dimenticata</a>
+              </form>
+              <form class="auth-forms__sign" action="#" >
+                  <h3 class="auth-forms__title">REGISTRATI</h3>
+                  <input class="newsletter-form__input auth-forms__input" type="text" name="fname" placeholder="Nome" required>
+                  <input class="newsletter-form__input auth-forms__input" type="text" name="lname" placeholder="Cognome" required>
+                  <input class="newsletter-form__input auth-forms__input" type="email" name="email" placeholder="E-mail" required>
+                  <input class="newsletter-form__input" type="password" name="password" placeholder="Password" required>
+                  <div class="checkbox-group">
+                      <div class="auth-check">
+                          <input class="auth-check__checkbox" type="checkbox" name="reg-agreement" id="reg-agreement" required>
+                          <label class="newsletter-form__label auth-check__label" for="reg-agreement">Acconsento al trattamento dei dati</label>
+                      </div>
+                      <div class="auth-check">                        
+                          <input class="auth-check__checkbox" type="checkbox" name="subscription" id="subscription">
+                          <label class="newsletter-form__label auth-check__label" for="subscription">Mi iscriva alla Newsletter</label>
+                      </div>
+                  </div>         
+                  <input class="newsletter-form__submit" type="submit" value="ISCRIVITI">
+              </form>
+          </div>
+      </div>                                
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top__wrap">
+                <div class="footer-top__section">
+                    <h3 class="footer-top__title">Lampadari made in italy</h3>
+                    <p class="footer-top__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                </div>
+                <div class="footer-top__section">
+                    <h3 class="footer-top__title">lampadari artigianali</h3>
+                    <p class="footer-top__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                </div>
+                <div class="footer-top__section">
+                    <h3 class="footer-top__title">45 anni di esperienza</h3>
+                    <p class="footer-top__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                </div>
+                <div class="footer-top__section">
+                    <h3 class="footer-top__title">NEWSLETTER</h3>
+                    <form class="newsletter-form" action="#">
+                        <input class="newsletter-form__input" type="text" name="name" placeholder="Nome e Cognome"
+                            required>
+                        <input class="newsletter-form__input" type="email" name="email" placeholder="Email" required>
+                        <div class="newsletter-form__agree">
+                            <input class="newsletter-form__checkbox" type="checkbox" name="subscr-agreement"
+                                id="subscr-agreement" required>
+                            <label class="newsletter-form__label" for="subscr-agreement">Acconsento al trattamento dei
+                                dati</label>
+                        </div>
+                        <input class="newsletter-form__submit" type="submit" value="ISCRIVITI">
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer__bottom">
+            <div class="footer-bottom-contacts__block">
+                <span class="footer-bottom-contacts__elem">MMLAMPADARI&nbsp;srl</span>
+                <span class="footer-bottom-contacts__elem">Via&nbsp;Feltrina&nbsp;00</span>
+                <span class="footer-bottom-contacts__elem">31111&nbsp;Pederobba&nbsp;&nbsp;(TV)</span>
+                <span class="footer-bottom-contacts__elem">0423.123456</span>
+                <span class="footer-bottom-contacts__elem">info@mmlampadari.mm</span>
+                <span class="footer-bottom-contacts__elem">P.IVA&nbsp;04123456789</span>
+            </div>
+            <div class="footer-bottom__social">
+                <a class="footer-bottom-social__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="20" height="20" x="0" y="0"
+                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                        <g>
+                            <path xmlns="http://www.w3.org/2000/svg"
+                                d="m437 0h-362c-41.351562 0-75 33.648438-75 75v362c0 41.351562 33.648438 75 75 75h151v-181h-60v-90h60v-61c0-49.628906 40.371094-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.351562 0 75-33.648438 75-75v-362c0-41.351562-33.648438-75-75-75zm0 0"
+                                fill="#ffffff" data-original="#000000" />
+                        </g>
+                    </svg>
+
+                </a>
+                <a class="footer-bottom-social__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="20" height="20" x="0" y="0"
+                        viewBox="0 0 300 300" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                        <g>
+                            <g xmlns="http://www.w3.org/2000/svg" id="XMLID_504_">
+                                <path id="XMLID_505_"
+                                    d="M38.52,0.012h222.978C282.682,0.012,300,17.336,300,38.52v222.978c0,21.178-17.318,38.49-38.502,38.49   H38.52c-21.184,0-38.52-17.313-38.52-38.49V38.52C0,17.336,17.336,0.012,38.52,0.012z M218.546,33.329   c-7.438,0-13.505,6.091-13.505,13.525v32.314c0,7.437,6.067,13.514,13.505,13.514h33.903c7.426,0,13.506-6.077,13.506-13.514   V46.854c0-7.434-6.08-13.525-13.506-13.525H218.546z M266.084,126.868h-26.396c2.503,8.175,3.86,16.796,3.86,25.759   c0,49.882-41.766,90.34-93.266,90.34c-51.487,0-93.254-40.458-93.254-90.34c0-8.963,1.37-17.584,3.861-25.759H33.35v126.732   c0,6.563,5.359,11.902,11.916,11.902h208.907c6.563,0,11.911-5.339,11.911-11.902V126.868z M150.283,90.978   c-33.26,0-60.24,26.128-60.24,58.388c0,32.227,26.98,58.375,60.24,58.375c33.278,0,60.259-26.148,60.259-58.375   C210.542,117.105,183.561,90.978,150.283,90.978z"
+                                    fill="#ffffff" data-original="#000000" />
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                        </g>
+                    </svg>
+
+                </a>
+                <a class="footer-bottom-social__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="20" height="20" x="0" y="0"
+                        viewBox="0 0 511.977 511.977" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                        <g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="M262.948,0C122.628,0,48.004,89.92,48.004,187.968c0,45.472,25.408,102.176,66.08,120.16    c6.176,2.784,9.536,1.6,10.912-4.128c1.216-4.352,6.56-25.312,9.152-35.2c0.8-3.168,0.384-5.92-2.176-8.896    c-13.504-15.616-24.224-44.064-24.224-70.752c0-68.384,54.368-134.784,146.88-134.784c80,0,135.968,51.968,135.968,126.304    c0,84-44.448,142.112-102.208,142.112c-31.968,0-55.776-25.088-48.224-56.128c9.12-36.96,27.008-76.704,27.008-103.36    c0-23.904-13.504-43.68-41.088-43.68c-32.544,0-58.944,32.224-58.944,75.488c0,27.488,9.728,46.048,9.728,46.048    S144.676,371.2,138.692,395.488c-10.112,41.12,1.376,107.712,2.368,113.44c0.608,3.168,4.16,4.16,6.144,1.568    c3.168-4.16,42.08-59.68,52.992-99.808c3.968-14.624,20.256-73.92,20.256-73.92c10.72,19.36,41.664,35.584,74.624,35.584    c98.048,0,168.896-86.176,168.896-193.12C463.62,76.704,375.876,0,262.948,0z"
+                                        fill="#ffffff" data-original="#000000" />
+                                </g>
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                            </g>
+                        </g>
+                    </svg>
+
+                </a>
+            </div>
+            <div class="footer-bottom-languages__block">
+                <a class="footer-bottom-languages__option" href="#">ITA</a>&#124;
+                <a class="footer-bottom-languages__option" href="#">ENG</a>&#124;
+                <a class="footer-bottom-languages__option" href="#">DEU</a>&#124;
+                <a class="footer-bottom-languages__option" href="#">РУС</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
