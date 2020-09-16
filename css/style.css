@@ -389,6 +389,9 @@ a, button {
 }
 
 @media (max-width: 991px) {
+  .content {
+    height: calc(var(--vh, 1vh) * 100);
+  }
   .container {
     width: auto;
     padding-left: 24px;
@@ -989,7 +992,7 @@ a, button {
 
 @media (max-width: 991px) {
   .slider__item {
-    height: calc(100vh - 200px);
+    height: calc(100vh - 100px);
   }
 }
 
@@ -1013,6 +1016,9 @@ a, button {
   .articles-block__title {
     min-height: 0;
     font-size: 20px;
+  }
+  .slider__item {
+    height: calc(100vh - 100px);
   }
   .about {
     min-height: 0;
