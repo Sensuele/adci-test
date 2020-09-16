@@ -373,6 +373,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .content {
+  overflow: hidden;
   height: 100vh;
 }
 
@@ -386,9 +387,19 @@ a, button {
   transition: all .3s;
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 991px) {
   .container {
-    margin: 0px 20px;
+    width: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: auto;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
