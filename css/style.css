@@ -375,6 +375,7 @@ h1, h2, h3, h4, h5 {
 .content {
   overflow: hidden;
   height: 100vh;
+  max-height: 100vh;
 }
 
 img {
@@ -1022,6 +1023,10 @@ a, button {
   .about__title {
     font-size: 20px;
     margin-bottom: 10px;
+  }
+  .main-slider {
+    height: calc(100vh - 100px);
+    position: relative;
   }
 }
 
