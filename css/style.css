@@ -989,7 +989,7 @@ a, button {
 
 @media (max-width: 991px) {
   .slider__item {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 200px);
   }
 }
 
@@ -1023,10 +1023,6 @@ a, button {
   .about__title {
     font-size: 20px;
     margin-bottom: 10px;
-  }
-  .main-slider {
-    height: calc(100vh - 100px);
-    position: relative;
   }
 }
 
