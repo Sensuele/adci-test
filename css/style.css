@@ -354,6 +354,7 @@ h1, h2, h3, h4, h5 {
 .container {
   margin: 0 auto;
   max-width: 1170px;
+  width: 1170px;
 }
 
 .content {
@@ -370,6 +371,12 @@ img {
 a, button {
   -webkit-transition: all .3s;
   transition: all .3s;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: auto;
+  }
 }
 
 @media (max-width: 991px) {
