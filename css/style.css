@@ -413,12 +413,12 @@ a, button {
   color: #ffffff;
   padding-right: 20px;
   padding-left: 20px;
+  padding-bottom: 23px;
 }
 
 .main-header__logo {
   z-index: 999;
   width: 280px;
-  margin-bottom: 23px;
 }
 
 .main-header-wrap {
@@ -446,7 +446,6 @@ a, button {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-bottom: 23px;
 }
 
 .nav__menu {
@@ -593,6 +592,9 @@ a, button {
     /* overflow: hidden; */
     -webkit-transition: 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
     transition: 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  }
+  .nav__menu {
+    margin-bottom: 15px;
   }
   .nav__wrap {
     padding-top: 100px;
@@ -1104,6 +1106,7 @@ a, button {
 }
 
 .footer-top__wrap {
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1119,7 +1122,6 @@ a, button {
 
 .footer-top__section {
   width: 195px;
-  margin-top: 40px;
   margin-right: 45px;
   margin-left: 9px;
   font-weight: 300;
